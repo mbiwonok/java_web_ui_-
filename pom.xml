@@ -4,17 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.iq_soft</groupId>
+    <groupId>GB_web_ui</groupId>
     <artifactId>java_web_ui_testing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>java_web_ui_testing</name>
+
 
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <selenium.version>4.7.2</selenium.version>
     </properties>
 
     <dependencies>
@@ -26,8 +27,29 @@
         </dependency>
     </dependencies>
 
-    <build>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.7.2</version>
+    </dependency>
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.0.3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.7.32</version>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.6.2</version>
+        <scope>test</scope>
+    </dependency>
 
+    <build>
         <pluginManagement>
             <plugins>
                 <plugin>
